@@ -29,7 +29,7 @@ function js() {
     './node_modules/vue/dist/vue.min.js',
     './node_modules/jquery/dist/jquery.js',
     './node_modules/foundation-sites/dist/js/foundation.js',
-    'js/*.js'
+    './js/*.js'
   ])
     .pipe(concat('app.min.js'))
     .pipe(uglify())
