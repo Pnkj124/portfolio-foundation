@@ -1,8 +1,8 @@
 @charset 'utf-8';
 
-@import 'settings';
-@import 'foundation';
-@import 'motion-ui';
+@import "settings";
+@import "foundation";
+@import "motion-ui";
 
 // Global styles
 @include foundation-global-styles;
@@ -63,3 +63,76 @@
 // Motion UI
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+.profile-image {
+    border-radius: 50%;
+    max-width: 335px;
+    height: 335px;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.grid-container {
+    padding: 3rem 1.5rem;
+}
+
+.profile-header {
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+}
+
+.subheading {
+    font-family: Caveat, sans-serif;
+    font-size: 1.5rem !important;
+}
+
+.socials {
+    width: 100%;
+    margin-bottom: 1rem !important;
+
+    a {
+        color: #fff !important;
+        font-size: 2rem;
+    }
+}
+
+.call-to-action {
+    a > .button {
+        background-color: $black !important;
+    }
+}
+
+.projects {
+    margin-top: 3rem;
+}
+
+.card {
+    background-color: #212529 !important;
+    border: $light-gray;
+}
+
+.card-banner {
+    padding: 1.5rem 0;
+    background: #6c757d !important;
+}
+
+.card-header {
+    font-weight: bold;
+    text-transform: capitalize;
+
+    a {
+        color: $white;
+    }
+}
+
+.card-description {
+    color: $dark-gray;
+}
+
+.footer {
+    margin-top: 2rem;
+    color: $light-gray;
+    text-align: center;
+}
